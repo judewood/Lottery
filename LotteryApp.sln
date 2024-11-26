@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lottery", "Lottery", "{32439620-5AEA-472C-A735-ACA0B16A6E69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LotteryApp", "LotteryApp\LotteryApp.csproj", "{A50DCE3E-1FCE-42B0-8708-D387ED3B447B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{0BC74316-135F-4898-8BE6-1DBB35E34509}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LotteryTest", "LotteryTest\LotteryTest.csproj", "{F9CFD7EA-713F-4BD0-B601-5CDDF70B15E6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A50DCE3E-1FCE-42B0-8708-D387ED3B447B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A50DCE3E-1FCE-42B0-8708-D387ED3B447B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A50DCE3E-1FCE-42B0-8708-D387ED3B447B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A50DCE3E-1FCE-42B0-8708-D387ED3B447B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9CFD7EA-713F-4BD0-B601-5CDDF70B15E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9CFD7EA-713F-4BD0-B601-5CDDF70B15E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9CFD7EA-713F-4BD0-B601-5CDDF70B15E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9CFD7EA-713F-4BD0-B601-5CDDF70B15E6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A50DCE3E-1FCE-42B0-8708-D387ED3B447B} = {32439620-5AEA-472C-A735-ACA0B16A6E69}
+		{F9CFD7EA-713F-4BD0-B601-5CDDF70B15E6} = {0BC74316-135F-4898-8BE6-1DBB35E34509}
+	EndGlobalSection
+EndGlobal
