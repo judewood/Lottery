@@ -4,9 +4,15 @@ namespace LotteryApp.UserInterface
 {
     public interface IUserInterface
     {
-        int PromptPurchase(string name, Ticket ticket, int max);
         string GetIntro(string name);
-        string GetPrompt(string name, int min, int max);
+        string GetPrompt(int min, int max);
+        string GetQuitMessage();
+
+        string GetInsufficientFundsMsg();
+
+        string GetCPUInsufficientFundsMsg();
+        string GetPlayersMsg(int num);
+        string GetTicketsBoughtMsg(string playerName, int num, int balance);
         (int, string) GetTicketRequest(int min, int max);
     }
 }

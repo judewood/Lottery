@@ -1,8 +1,10 @@
 namespace LotteryApp.Models
 {
-    public record Prize(string Name, int PercentRevenue, int PercentPlayers);
+    public record Prize(string Name, int PercentRevenue, int PercentTickets, int NumPlayers);
 
-    public record Ticket(int MinTickets, int MaxTickets, int Cost);
+    public record TicketInfo(int MinTickets, int MaxTickets, int CostCents);
 
-    public record Players(int Min, int Max, string Prefix);
+    public record PlayerInfo(int Min, int Max, string Prefix);
+
+    public record PlayerTicket(Guid TicketId, string PlayerId);
 }

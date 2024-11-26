@@ -1,9 +1,5 @@
-using LotteryApp;
-using LotteryApp.Models;
 using LotteryApp.UserInterface;
-using System;
 using Moq;
-using System.Globalization;
 
 namespace LotteryTest.UserInterfaceTests;
 
@@ -14,11 +10,11 @@ public class UnitTest1
     {
         var mockUserInput = new Mock<IUserInput>();
         UserInterface uut = new UserInterface(mockUserInput.Object);
-        string playerName = "playername";
+        string playerName = "playerName";
 
         string result = uut.GetIntro(playerName);
 
-        Assert.Equal($"Welcome to the Bede Lottery, {playerName}{Environment.NewLine}", result);
+        Assert.Equal($"Welcome to Jude's Lottery, {playerName}{Environment.NewLine}", result);
     }
 
     [Fact]
@@ -26,12 +22,11 @@ public class UnitTest1
     {
         var mockUserInput = new Mock<IUserInput>();
         UserInterface uut = new UserInterface(mockUserInput.Object);
-        string playerName = "playername";
         int min = 1;
         int max = 10;
-        string expected = $"How many tickets would you like {playerName}? Enter between {min} and {max}.{Environment.NewLine}. Type'q' to quit";
+        string expected = $"How many tickets do you want to buy? Enter between {min} and {max}.{Environment.NewLine}Type'q' to quit";
 
-        string result = uut.GetPrompt(playerName, 1, 10);
+        string result = uut.GetPrompt(1, 10);
 
         Assert.Equal(expected, result);
     }
