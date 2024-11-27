@@ -28,15 +28,16 @@ between 10 and 15.
 - Each player is allowed to purchase between 1 and 10 tickets dependant on their balance.
 - Each player starts with a balance of $10.00
 - Each ticket costs $1.00
-- The system ensure that no player can purchase more tickets
+- The system ensures that no player can purchase more tickets than their balance allows
 
 ## Game play
 
 The player takes part in multiple lottery draws until one of the following ends the program
 - The player has insufficient funds to buy a ticket
 - All the CPU players have insufficient funds to buy a ticket
-- The player enters Q/q to force the program to end
-The player is informed via the CPU how many tickets the CPU players purchased and the prize distribution and balance updates
+- The player enters 'Q' or 'q' to force the program to end
+
+The player is informed via the CPU how many tickets the CPU players purchased plus the prize distribution and updated balances.
 
 ## Prize distribution
 For each lottery draw there will be the following prizes: 
