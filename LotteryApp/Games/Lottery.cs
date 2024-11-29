@@ -35,7 +35,7 @@ public class Lottery
         return prizes;
     }
 
-    public string RunGames(int totalPlayers, TicketInfo ticketInfo, PlayerInfo playerInfo, string humanId)
+    public void RunGames(int totalPlayers, TicketInfo ticketInfo, PlayerInfo playerInfo, string humanId)
     {
         string status;
         for (; ; ) //forever
@@ -46,8 +46,7 @@ public class Lottery
                 break;
             }
         }
-        return status;
-
+        Console.WriteLine(UserInterface.GetExitMessage(status));
     }
 
     public string PlayOneLottery(int totalPlayers, TicketInfo ticketInfo, PlayerInfo playerInfo, string humanId)
@@ -231,6 +230,4 @@ public class Lottery
 
         return numPrizes;
     }
-
-
 }
