@@ -7,4 +7,6 @@ namespace LotteryApp.Models
     public record PlayerInfo(int Min, int Max, string Prefix);
 
     public record PlayerTicket(Guid TicketId, string PlayerId);
+
+    public record PlayerBalance(string PlayerId, int Balance);
 }
