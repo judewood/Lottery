@@ -29,7 +29,7 @@ TicketInfo ticketInfo = new(1, 10, 100);
 PlayerInfo playerInfo = new(10, 15, "Player ");
 int totalPlayers = playersService.GetTotalPlayers(playerInfo.Min, playerInfo.Max);
 string humanId = "Player 1"; //fixed but could be made user selectable later
-balanceService.SetInitialBalances(totalPlayers, playerInfo.Prefix, humanId);
+balanceService.SetInitialBalances(totalPlayers, playerInfo.Prefix, humanId, 1000);
 lottery.RunGames(totalPlayers, ticketInfo, playerInfo, humanId);
 
 static ServiceProvider CreateServices()
