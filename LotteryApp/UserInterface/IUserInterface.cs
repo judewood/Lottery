@@ -14,5 +14,6 @@ namespace LotteryApp.UserInterface
         string GetPlayersMsg(int num);
         string GetTicketsBoughtMsg(string playerName, int num, int balance);
         (int, string) GetTicketRequest(int min, int max);
+        string GetExitMessage(string status);
     }
 }

@@ -62,4 +62,15 @@ public class UserInterface : IUserInterface
     {
         return $"THE CPU players all have insufficient funds to purchase a ticket";
     }
+
+    public string GetExitMessage(string status)
+    {
+        return status switch
+        {
+            Consts.QUIT => GetQuitMessage(),
+            Consts.ZERO_BALANCE => GetInsufficientFundsMsg(),
+            Consts.LAST_PLAYER => GetCPUInsufficientFundsMsg(),
+            _ => status,
+        };
+    }
 }
