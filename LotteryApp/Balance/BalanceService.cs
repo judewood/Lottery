@@ -6,14 +6,12 @@ public class BalanceService : IBalanceService
 {
     private List<PlayerBalance> Balances { get; set; }
 
-    private const int startBalance = 1000;
-
     public BalanceService()
     {
         Balances = [];
     }
 
-    public void SetInitialBalances(int totalPlayers, string prefix, string humanId)
+    public void SetInitialBalances(int totalPlayers, string prefix, string humanId, int startBalance)
     {
         Balances.Add(new PlayerBalance(humanId, startBalance));
         for (int i = 1; i < totalPlayers; i++)
