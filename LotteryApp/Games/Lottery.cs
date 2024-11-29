@@ -2,7 +2,7 @@ using LotteryApp.UserInterface;
 using LotteryApp.Models;
 using LotteryApp.Extensions;
 using LotteryApp.random;
-using LotteryApp.Account;
+using LotteryApp.Balance;
 using static LotteryApp.Utils.Utils;
 
 namespace LotteryApp.Games;

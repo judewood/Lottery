@@ -1,4 +1,4 @@
-using LotteryApp.Account;
+using LotteryApp.Balance;
 using LotteryApp.Games;
 using LotteryApp.Models;
 using LotteryApp.random;
