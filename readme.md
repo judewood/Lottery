@@ -13,8 +13,7 @@
 2. I have added a sample set of unit tests - they are not exhaustive due to time constraints
 3. The code is auto-linted with VSCode extension that puts the opening `{` on the next line (annoying I know 😪 sorry). I am working on configuring this linter better. It also doesn't do nice things like auto remove unused usings and I might have missed some.
 4. I haven't included logging, environment variables, launch.json etc
-5. There are no try/catches since the only external input is the number of tickets and that is validated. 
-6. Arguably prizes could be a separate service.
+5. Arguably prizes could be a separate service.
 
 ## Description
 
