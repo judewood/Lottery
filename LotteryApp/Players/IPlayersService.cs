@@ -2,6 +2,6 @@ namespace LotteryApp.Players
 {
     public interface IPlayersService
     {
-        int GetTotalPlayers(int max);
+        int GetTotalPlayers(int min, int max);
     }
 }

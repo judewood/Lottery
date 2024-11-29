@@ -11,8 +11,8 @@ public class PlayersService:IPlayersService
         RandomService = randomService.ThrowIfNull(nameof(randomService));
     }
 
-    public int GetTotalPlayers(int max)
+    public int GetTotalPlayers(int min, int max)
     {
-        return RandomService.GetRandom(1, max + 1) + 1;  //add the human player
+        return RandomService.GetRandom(min, max + 1);
     }
 }
