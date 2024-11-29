@@ -11,4 +11,13 @@ public static class GenericExtensions
         return argument;
     }
 
+    public static T ExitIfNull<T>(this T? argument, int exitValue)
+    {
+        if (argument == null)
+        {
+            Environment.Exit(exitValue);
+        }
+        return argument;
+    }
+
 }
