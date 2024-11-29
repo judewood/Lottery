@@ -1,35 +1,37 @@
 using LotteryApp.Models;
 
-namespace LotteryApp.Account;
-
+namespace LotteryApp.Balance;
 
 public class BalanceService : IBalanceService
 {
-    private List<PlayerBalance> balances { get; set; }
+    private List<PlayerBalance> Balances { get; set; }
 
     private const int startBalance = 1000;
 
-    public BalanceService(int totalPlayers, string prefix, string humanId)
+    public BalanceService()
     {
-        balances = new List<PlayerBalance>();
+        Balances = [];
+    }
 
-        balances.Add(new PlayerBalance(humanId, startBalance));
+    public void SetInitialBalances(int totalPlayers, string prefix, string humanId)
+    {
+        Balances.Add(new PlayerBalance(humanId, startBalance));
         for (int i = 1; i < totalPlayers; i++)
         {
             string playerId = prefix + (i + 1).ToString();
-            balances.Add( new PlayerBalance(playerId, startBalance));
+            Balances.Add(new PlayerBalance(playerId, startBalance));
         }
     }
 
     public int Get(string playerId)
     {
-        return balances.Where(p => p.PlayerId == playerId).First().Balance;
+        return Balances.Where(p => p.PlayerId == playerId).First().Balance;
     }
 
     public void Update(string playerId, int adjustment)
     {
-        int index = balances.FindIndex(p => p.PlayerId == playerId);
-        int newBalance = balances[index].Balance + adjustment;
-        balances[index] = new PlayerBalance(playerId, newBalance);
+        int index = Balances.FindIndex(p => p.PlayerId == playerId);
+        int newBalance = Balances[index].Balance + adjustment;
+        Balances[index] = new PlayerBalance(playerId, newBalance);
     }
 }

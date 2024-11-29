@@ -1,4 +1,4 @@
-namespace LotteryApp.Account;
+namespace LotteryApp.Balance;
 
 public interface IBalanceService
 {
